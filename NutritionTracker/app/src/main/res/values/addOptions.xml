@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nutrients_array">
+        <item>@string/nutrient0</item>
+        <item>@string/nutrient1</item>
+        <item>@string/nutrient2</item>
+        <item>@string/nutrient3</item>
+    </string-array>
+</resources>

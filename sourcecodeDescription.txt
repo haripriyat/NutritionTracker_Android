@@ -1,0 +1,58 @@
+Source Code Description:
+
+
+
+For Android:
+
+
+
+Social Integration -Google Calendar API
+
+
+Database: SQLite
+
+
+Third Party API- Google Vision API 
+
+
+Package name: com.example.amyli.nutritiontracker
+
+
+SHA1-F5:A0:99:47:35:27:6B:68:AE:CD:75:7B:DA:FA:4C:F7:74:73:6B:65
+
+
+Api key -AIzaSyC05cNgEWdp6uq2wicE9cPxtv5ia2IoQ0A
+
+
+Client id- Oath 2.0 -466764222078-7ujn1ontbm8sv2k5mi92i67dv7euq36b.apps.googleusercontent.com
+
+
+
+
+
+
+For IOS:
+
+
+
+Social Integration -Google Calendar API
+
+
+Database: SQLite
+
+
+Third Party API:  Tesseract OCR engine
+
+
+Package name:
+Edu.cmu.nutritiontTracker
+
+
+
+Google app id:
+1:1059487596200:ios:d200c7af04c47683
+
+
+
+Client Id - Oath 2.0
+1059487596200-27v0veq4u7edsjcvbu6v2q9v6d7qigbb.apps.googleusercontent.com

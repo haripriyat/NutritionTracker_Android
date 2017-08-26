@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.amyli.nutritiontracker.reminder">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grocery List"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="38dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginStart="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/googlecalbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save to Calendar"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="172dp"
+        android:layout_below="@+id/editText9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:text="Shopping items"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Date"
+        android:layout_below="@+id/editText6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginStart="19dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_centerVertical="true"
+        android:text="Time" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="Location"
+        android:layout_below="@+id/editText8"
+        android:layout_alignStart="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter the items"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_marginStart="18dp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Date Format- yyyy-mm-dd"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignStart="@+id/editText6" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText7"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="time"
+        android:hint="Time Format-hh:mm:ss"/>
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:hint="Enter the Location"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignStart="@+id/editText6" />
+
+</RelativeLayout>

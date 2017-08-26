@@ -1,0 +1,213 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homepage"
+    tools:context="com.example.amyli.nutritiontracker.homePage">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button_editGoals"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Edit Goals" />
+        </LinearLayout>
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="horizontal"
+            android:columnCount="3">
+
+            <!--row 1 labels-->
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/nutrient0"
+                    android:textSize="22dp"/>
+
+                <Space android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/text_view_count_1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="0"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/text_view_label_1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="%"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+            <Space android:layout_width="0dp" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/nutrient1"
+                    android:textSize="22dp"/>
+
+                <Space android:layout_width="20dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/text_view_count_2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="0"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/text_view_label_2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="%"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+            <!--row 1 graph-->
+            <ProgressBar
+                android:id="@+id/determinateBar_1"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_gravity="fill_horizontal" />
+
+            <Space android:layout_width="0dp" />
+
+            <ProgressBar
+                android:id="@+id/determinateBar_2"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_gravity="fill_horizontal"
+                android:progress="30"/>
+
+            <!--row 2 labels-->
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/nutrient2"
+                    android:textSize="22dp"/>
+
+                <Space android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/text_view_count_3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="0"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="%"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+            <Space android:layout_width="0dp" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/nutrient3"
+                    android:textSize="22dp"/>
+
+                <Space android:layout_width="20dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/text_view_count_4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="0"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="%"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+            <!--row 2 graphs-->
+            <ProgressBar
+                android:id="@+id/determinateBar_3"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_gravity="fill_horizontal"
+                android:progress="60"/>
+
+            <Space android:layout_width="0dp" />
+
+            <ProgressBar
+                android:id="@+id/determinateBar_4"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_gravity="fill_horizontal"
+                android:progress="80"/>
+
+            <!--grid widths-->
+            <Space android:layout_width="130dp" />
+
+            <Space android:layout_width="15dp" />
+
+            <Space android:layout_width="130dp" />
+        </GridLayout>
+
+        <!--just for debugging-->
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="clear database"/>
+    </LinearLayout>
+</FrameLayout>

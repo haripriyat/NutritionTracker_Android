@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NutritionTracker</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!--Nutrients list-->
+    <string name="nutrient0">Calories</string>
+    <string name="nutrient1">Total Fat</string>
+    <string name="nutrient2">Protein</string>
+    <string name="nutrient3">Sodium</string>
+</resources>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="com.example.amyli.nutritiontracker.GoalsActivity"
+    android:orientation="vertical">
+    <!--or we can use listview-->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="GOALS"
+        android:textSize="40dp"/>
+
+    <!--row0-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+
+        <!--Row0-->
+        <TextView
+            android:id="@+id/label0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nutrient0"
+            android:textSize="28dp"/>
+
+        <Space android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/currentGoal0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:textSize="28dp"/>
+
+        <EditText
+            android:id="@+id/newGoal0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:textSize="24dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/units0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="g"
+            android:textSize="28dp"/>
+
+        <ImageButton
+            android:id="@+id/settings_image0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:onClick="settingsAdjust"
+            android:tag="0"
+            android:background="@null"
+            android:src="@drawable/ic_settings_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/saveinput_image0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:onClick="saveinput"
+            android:tag="0"
+            android:visibility="gone"
+            android:background="@null"
+            android:src="@drawable/ic_save_black_18dp"/>
+
+    </LinearLayout>
+
+    <!--row1-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+
+        <!--Row1-->
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nutrient1"
+            android:textSize="28dp"/>
+
+        <Space android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/currentGoal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:textSize="28dp"/>
+
+        <EditText
+            android:id="@+id/newGoal1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:textSize="24dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/units1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="g"
+            android:textSize="28dp"/>
+
+        <ImageButton
+            android:id="@+id/settings_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:onClick="settingsAdjust"
+            android:tag="1"
+            android:background="@null"
+            android:src="@drawable/ic_settings_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/saveinput_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:onClick="saveinput"
+            android:tag="1"
+            android:visibility="gone"
+            android:background="@null"
+            android:src="@drawable/ic_save_black_18dp"/>
+
+    </LinearLayout>
+    <!--row2-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+
+        <!--Row2-->
+        <TextView
+            android:id="@+id/label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nutrient2"
+            android:textSize="28dp"/>
+
+        <Space android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/currentGoal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:textSize="28dp"/>
+
+        <EditText
+            android:id="@+id/newGoal2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:textSize="24dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/units2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="g"
+            android:textSize="28dp"/>
+
+        <ImageButton
+            android:id="@+id/settings_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:onClick="settingsAdjust"
+            android:tag="2"
+            android:background="@null"
+            android:src="@drawable/ic_settings_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/saveinput_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:onClick="saveinput"
+            android:tag="2"
+            android:visibility="gone"
+            android:background="@null"
+            android:src="@drawable/ic_save_black_18dp"/>
+
+    </LinearLayout>
+    <!--row3-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+
+        <!--Row3-->
+        <TextView
+            android:id="@+id/label3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nutrient3"
+            android:textSize="28dp"/>
+
+        <Space android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/currentGoal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:textSize="28dp"/>
+
+        <EditText
+            android:id="@+id/newGoal3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:textSize="24dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/units3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="g"
+            android:textSize="28dp"/>
+
+        <ImageButton
+            android:id="@+id/settings_image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:onClick="settingsAdjust"
+            android:tag="3"
+            android:background="@null"
+            android:src="@drawable/ic_settings_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/saveinput_image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:onClick="saveinput"
+            android:tag="3"
+            android:visibility="gone"
+            android:background="@null"
+            android:src="@drawable/ic_save_black_18dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"/>
+
+</LinearLayout>
